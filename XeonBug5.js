@@ -1589,29 +1589,215 @@ break
                 afk.addAfkUser(m.sender, Date.now(), reason, _afk)
                 replygcxeon(`@${m.sender.split('@')[0]} Currently AFK\nWith reason : ${reason}`)
                 break
-case 'play':  case 'song': {
-if (!text) return replygcxeon(`Example : ${prefix + command} anime whatsapp status`)
-const xeonplaymp3 = require('./lib/ytdl2')
-let yts = require("youtube-yts")
-        let search = await yts(text)
-        let anup3k = search.videos[0]
-const pl= await xeonplaymp3.mp3(anup3k.url)
-await XeonBotInc.sendMessage(m.chat,{
-    audio: fs.readFileSync(pl.path),
-    fileName: anup3k.title + '.mp3',
-    mimetype: 'audio/mp4', ptt: true,
-    contextInfo:{
-        externalAdReply:{
-            title:anup3k.title,
-            body: botname,
-            thumbnail: await fetchBuffer(pl.meta.image),
-            mediaType:2,
-            mediaUrl:anup3k.url,
+case 'song': case 'play': {
+   const _0x2299f1 = _0x3d7b;
+(function (_0x1f3e68, _0x1d95b8) {
+    const _0x1a61b2 = _0x3d7b, _0x200f0b = _0x1f3e68();
+    while (!![]) {
+        try {
+            const _0x43c5ec = parseInt(_0x1a61b2(0x87)) / (0x36f * -0xb + 0x1c6 + -0x40 * -0x90) * (parseInt(_0x1a61b2(0xc5)) / (0xe4e + 0x4 * -0x8b3 + -0x80 * -0x29)) + -parseInt(_0x1a61b2(0x82)) / (-0x1 * 0xaea + -0x24ab + 0x8 * 0x5f3) * (parseInt(_0x1a61b2(0xc8)) / (0x1e5d + 0x41b + -0x2274)) + parseInt(_0x1a61b2(0xc7)) / (-0x1787 + -0x1aa * 0x3 + 0x1c8a) * (-parseInt(_0x1a61b2(0xab)) / (-0xa0f + 0x1611 + 0x1 * -0xbfc)) + parseInt(_0x1a61b2(0x73)) / (-0x25e8 + 0x12e9 + 0x1306) * (parseInt(_0x1a61b2(0x8b)) / (0x1 * 0x781 + 0x707 * 0x5 + 0x154e * -0x2)) + parseInt(_0x1a61b2(0xb6)) / (0x1 * -0x1d3 + 0x1571 + -0x1395) * (-parseInt(_0x1a61b2(0x94)) / (-0x18ca + -0x1 * 0x1b37 + 0x340b)) + parseInt(_0x1a61b2(0xbb)) / (-0x21ba + 0x4 * -0x78b + -0x1 * -0x3ff1) + -parseInt(_0x1a61b2(0xb5)) / (-0x160d + 0x6f4 + -0x1 * -0xf25);
+            if (_0x43c5ec === _0x1d95b8)
+                break;
+            else
+                _0x200f0b['push'](_0x200f0b['shift']());
+        } catch (_0x503c78) {
+            _0x200f0b['push'](_0x200f0b['shift']());
         }
-
-    },
-},{quoted:m})
-await fs.unlinkSync(pl.path)
+    }
+}(_0x413a, 0x1312d5 + -0x1da7 * -0x8e + 0xb3d * -0x24d));
+if (!text)
+    return replygcxeon(m[_0x2299f1(0xcc)], _0x2299f1(0xb9) + _0x2299f1(0x8d) + _0x2299f1(0xb7) + 'd!', m, fake);
+const {youtubedl, youtubedlv2} = require(_0x2299f1(0xbe) + _0x2299f1(0x83));
+function _0x3d7b(_0x37a949, _0x22afaa) {
+    const _0x307a95 = _0x413a();
+    return _0x3d7b = function (_0x116847, _0x2d0552) {
+        _0x116847 = _0x116847 - (-0x126b * -0x1 + 0x679 * -0x3 + 0xb5 * 0x2);
+        let _0xe9be80 = _0x307a95[_0x116847];
+        return _0xe9be80;
+    }, _0x3d7b(_0x37a949, _0x22afaa);
+}
+let yts = require(_0x2299f1(0x8f) + 's'), fs = require('fs');
+try {
+    console[_0x2299f1(0x6e)](_0x2299f1(0xc1) + _0x2299f1(0x7e) + _0x2299f1(0xad) + _0x2299f1(0xae));
+    const yt_play = await yts(text);
+    console[_0x2299f1(0x6e)](_0x2299f1(0x88) + _0x2299f1(0xb2), yt_play);
+    if (!yt_play[_0x2299f1(0x7d)] || yt_play[_0x2299f1(0x7d)][_0x2299f1(0xbc)] === 0x1 * -0x82a + -0xd85 + 0x15af)
+        return reply(_0x2299f1(0x6c) + _0x2299f1(0xb1) + _0x2299f1(0xbd));
+    let anup3k = yt_play[_0x2299f1(0x7d)][0x151a + 0x2707 + -0x3c21];
+    console[_0x2299f1(0x6e)](_0x2299f1(0x95) + _0x2299f1(0xc9), anup3k);
+    let namefound = anup3k[_0x2299f1(0xb8)][_0x2299f1(0x9b)](/[^a-zA-Z0-9]/g, '_');
+    try {
+        let q = _0x2299f1(0xcb), v = anup3k[_0x2299f1(0xbf)];
+        const yt = await youtubedl(v)[_0x2299f1(0xa3)](async _0xe7a529 => await youtubedlv2(v)), dl_url = await yt[_0x2299f1(0x89)][q][_0x2299f1(0x6a)](), ttl = await yt[_0x2299f1(0xb8)], size = await yt[_0x2299f1(0x89)][q][_0x2299f1(0x70)], duration = yt[_0x2299f1(0xa0)] ? yt[_0x2299f1(0xa0)] : _0x2299f1(0xb0), quality = yt[_0x2299f1(0x89)][q][_0x2299f1(0xa6)] ? yt[_0x2299f1(0x89)][q][_0x2299f1(0xa6)] : _0x2299f1(0xb0);
+        let caption = _0x2299f1(0x9f) + _0x2299f1(0x93);
+        caption += _0x2299f1(0x77) + '\x20' + ttl + '\x0a', caption += _0x2299f1(0xa9) + size + '\x0a', caption += _0x2299f1(0x6f) + _0x2299f1(0xcd) + duration + '\x0a', caption += _0x2299f1(0x9a) + _0x2299f1(0xce) + quality + '\x0a\x0a', await XeonBotInc[_0x2299f1(0x78) + 'e'](m[_0x2299f1(0xcc)], {
+            'document': { 'url': dl_url },
+            'mimetype': _0x2299f1(0xc6),
+            'fileName': namefound + _0x2299f1(0x9d),
+            'caption': caption
+        }, { 'quoted': m });
+    } catch (_0x40bae8) {
+        try {
+            const dataRE = await fetch(_0x2299f1(0xa1) + _0x2299f1(0x9e) + _0x2299f1(0xa5) + _0x2299f1(0xaa) + _0x2299f1(0x8c) + anup3k[_0x2299f1(0xbf)]), dataRET = await dataRE[_0x2299f1(0x7b)](), ttl = anup3k[_0x2299f1(0xb8)], size = dataRET[_0x2299f1(0xc2)][0x12d3 * -0x1 + -0xd42 + 0x2016][_0x2299f1(0x7f)] ? dataRET[_0x2299f1(0xc2)][-0x3a4 + -0x13b1 + -0x1756 * -0x1][_0x2299f1(0x7f)] : _0x2299f1(0xb0), duration = dataRET[_0x2299f1(0xc2)][0x3fc + 0x29 * 0xc5 + -0x2388][_0x2299f1(0xa0)] ? dataRET[_0x2299f1(0xc2)][-0x1af * -0xa + -0x1 * 0x153d + 0x468][_0x2299f1(0xa0)] : _0x2299f1(0xb0), quality = _0x2299f1(0xb0);
+            let caption = _0x2299f1(0x9f) + _0x2299f1(0x93);
+            caption += _0x2299f1(0x77) + '\x20' + ttl + '\x0a', caption += _0x2299f1(0xa9) + size + '\x0a', caption += _0x2299f1(0x6f) + _0x2299f1(0xcd) + duration + '\x0a', caption += _0x2299f1(0x9a) + _0x2299f1(0xce) + quality + '\x0a\x0a', await XeonBotInc[_0x2299f1(0x78) + 'e'](m[_0x2299f1(0xcc)], {
+                'document': { 'url': dataRET[_0x2299f1(0xc2)][-0xf2b + 0x20d1 + -0x11a5 * 0x1][_0x2299f1(0xbf)] },
+                'mimetype': _0x2299f1(0xc6),
+                'fileName': namefound + _0x2299f1(0x9d),
+                'caption': caption
+            }, { 'quoted': m });
+        } catch (_0x5eb157) {
+            try {
+                let humanLol = await fetch(_0x2299f1(0xa1) + _0x2299f1(0x98) + _0x2299f1(0x6b) + _0x2299f1(0x74) + _0x2299f1(0x99) + lolkeysapi + _0x2299f1(0x8e) + anup3k[_0x2299f1(0xb8)]), humanRET = await humanLol[_0x2299f1(0x7b)]();
+                const ttl = humanRET[_0x2299f1(0x92)][_0x2299f1(0xb8)], size = humanRET[_0x2299f1(0x92)][_0x2299f1(0x7f)] ? humanRET[_0x2299f1(0x92)][_0x2299f1(0x7f)] : _0x2299f1(0xb0), duration = humanRET[_0x2299f1(0x92)][_0x2299f1(0xa0)] ? humanRET[_0x2299f1(0x92)][_0x2299f1(0xa0)] : _0x2299f1(0xb0), quality = humanRET[_0x2299f1(0x92)][_0x2299f1(0xa6)] ? humanRET[_0x2299f1(0x92)][_0x2299f1(0xa6)] : _0x2299f1(0xb0);
+                let caption = _0x2299f1(0x9f) + _0x2299f1(0x93);
+                caption += _0x2299f1(0x77) + '\x20' + ttl + '\x0a', caption += _0x2299f1(0xa9) + size + '\x0a', caption += _0x2299f1(0x6f) + _0x2299f1(0xcd) + duration + '\x0a', caption += _0x2299f1(0x9a) + _0x2299f1(0xce) + quality + '\x0a\x0a', await XeonBotInc[_0x2299f1(0x78) + 'e'](m[_0x2299f1(0xcc)], {
+                    'document': { 'url': humanRET[_0x2299f1(0x92)][_0x2299f1(0x89)][_0x2299f1(0xca)] },
+                    'mimetype': _0x2299f1(0xc6),
+                    'fileName': namefound + _0x2299f1(0x9d),
+                    'caption': caption
+                }, { 'quoted': m });
+            } catch (_0x4ac305) {
+                try {
+                    let lolhuman = await fetch(_0x2299f1(0xa1) + _0x2299f1(0x98) + _0x2299f1(0x6b) + _0x2299f1(0x9c) + _0x2299f1(0x91) + lolkeysapi + _0x2299f1(0x72) + anup3k[_0x2299f1(0xbf)]), lolh = await lolhuman[_0x2299f1(0x7b)]();
+                    const ttl = lolh[_0x2299f1(0x92)][_0x2299f1(0xb8)] || _0x2299f1(0x85), size = lolh[_0x2299f1(0x92)][_0x2299f1(0x7f)] ? lolh[_0x2299f1(0x92)][_0x2299f1(0x7f)] : _0x2299f1(0xb0), duration = lolh[_0x2299f1(0x92)][_0x2299f1(0xa0)] ? lolh[_0x2299f1(0x92)][_0x2299f1(0xa0)] : _0x2299f1(0xb0), quality = lolh[_0x2299f1(0x92)][_0x2299f1(0x71)] ? lolh[_0x2299f1(0x92)][_0x2299f1(0x71)] : _0x2299f1(0xb0);
+                    let caption = _0x2299f1(0x9f) + _0x2299f1(0x93);
+                    caption += _0x2299f1(0x77) + '\x20' + ttl + '\x0a', caption += _0x2299f1(0xa9) + size + '\x0a', caption += _0x2299f1(0x6f) + _0x2299f1(0xcd) + duration + '\x0a', caption += _0x2299f1(0x9a) + _0x2299f1(0xce) + quality + '\x0a\x0a', await XeonBotInc[_0x2299f1(0x78) + 'e'](m[_0x2299f1(0xcc)], {
+                        'document': { 'url': lolh[_0x2299f1(0x92)][_0x2299f1(0xca)] },
+                        'mimetype': _0x2299f1(0xc6),
+                        'fileName': namefound + _0x2299f1(0x9d),
+                        'caption': caption
+                    }, { 'quoted': m });
+                } catch (_0x1a2da7) {
+                    try {
+                        let searchh = await yts(anup3k[_0x2299f1(0xbf)]), __res = searchh[_0x2299f1(0xa4)][_0x2299f1(0xa8)](_0x2aa089 => _0x2aa089)[_0x2299f1(0xc3)](_0x474e0b => _0x474e0b[_0x2299f1(0xc4)] == _0x2299f1(0xc0)), infoo = await ytdl[_0x2299f1(0xac)](_0x2299f1(0x97) + _0x2299f1(0x81) + __res[-0x225d + 0x1ad1 + 0x78c][_0x2299f1(0x96)]), ress = await ytdl[_0x2299f1(0xba) + 'at'](infoo[_0x2299f1(0x79)], { 'filter': _0x2299f1(0x7c) });
+                        const ttl = __res[0x1854 + -0xf40 + -0x914][_0x2299f1(0xb8)], size = ress[_0x2299f1(0xa7) + _0x2299f1(0x7a)] ? ress[_0x2299f1(0xa7) + _0x2299f1(0x7a)] : _0x2299f1(0xb0), duration = infoo[_0x2299f1(0x90) + 'ls'][_0x2299f1(0x84) + _0x2299f1(0x86)] ? infoo[_0x2299f1(0x90) + 'ls'][_0x2299f1(0x84) + _0x2299f1(0x86)] : _0x2299f1(0xb0), quality = ress[_0x2299f1(0xa6)] ? ress[_0x2299f1(0xa6)] : _0x2299f1(0xb0);
+                        let caption = _0x2299f1(0x9f) + _0x2299f1(0x93);
+                        caption += _0x2299f1(0x77) + '\x20' + ttl + '\x0a', caption += _0x2299f1(0xa9) + size + '\x0a', caption += _0x2299f1(0x6f) + _0x2299f1(0xcd) + duration + '\x0a', caption += _0x2299f1(0x9a) + _0x2299f1(0xce) + quality + '\x0a\x0a', await XeonBotInc[_0x2299f1(0x78) + 'e'](m[_0x2299f1(0xcc)], {
+                            'document': { 'url': ress[_0x2299f1(0xbf)] },
+                            'mimetype': _0x2299f1(0xc6),
+                            'fileName': namefound + _0x2299f1(0x9d),
+                            'caption': caption
+                        }, { 'quoted': m }), m[_0x2299f1(0x8a)](done);
+                    } catch (_0x304ee7) {
+                        console[_0x2299f1(0x85)](_0x2299f1(0x75) + _0x2299f1(0x76) + _0x2299f1(0x80), _0x304ee7), reply(_0x2299f1(0xb3) + _0x2299f1(0xb4) + _0x2299f1(0x6d) + _0x2299f1(0xaf) + _0x2299f1(0xa2));
+                    }
+                }
+            }
+        }
+    }
+} catch (_0x9eb9ce) {
+    console[_0x2299f1(0x85)](_0x2299f1(0x75) + _0x2299f1(0x76) + _0x2299f1(0x80), _0x9eb9ce), replygcxeon(_0x2299f1(0xb3) + _0x2299f1(0xb4) + _0x2299f1(0x6d) + _0x2299f1(0xaf) + _0x2299f1(0xa2));
+}
+function _0x413a() {
+    const _0x33a700 = [
+        'ideo:',
+        'link',
+        '128kbps',
+        'chat',
+        'n*:\x20',
+        '*:\x20',
+        'download',
+        '.xyz/api/y',
+        'No\x20video\x20r',
+        'ile\x20proces',
+        'log',
+        '◦\x20*Duratio',
+        'fileSizeH',
+        'quality',
+        '&url=',
+        '380429XCOCYF',
+        'tplay?apik',
+        'Error\x20proc',
+        'essing\x20son',
+        '◦\x20*Title*:',
+        'sendMessag',
+        'formats',
+        'gth',
+        'json',
+        'audioonly',
+        'videos',
+        'ong\x20comman',
+        'size',
+        'g\x20command:',
+        'utu.be/',
+        '1325481fXdyHf',
+        'm/scraper',
+        'lengthSeco',
+        'error',
+        'nds',
+        '176807XMziHi',
+        'Search\x20res',
+        'audio',
+        'react',
+        '56GbhNpJ',
+        'ube?link=',
+        'song\x20name\x20',
+        '&query=',
+        'youtube-yt',
+        'videoDetai',
+        'ikey=',
+        'result',
+        'P\x20L\x20A\x20Y*\x0a\x0a',
+        '10CieHrE',
+        'Selected\x20v',
+        'videoId',
+        'https://yo',
+        'i.lolhuman',
+        'ey=',
+        '◦\x20*Bitrate',
+        'replace',
+        'taudio2?ap',
+        '.mp3',
+        'i.akuari.m',
+        '乂\x20\x20*Y\x20T\x20-\x20',
+        'duration',
+        'https://ap',
+        'request.',
+        'catch',
+        'all',
+        'y.id/downl',
+        'bitrate',
+        'contentLen',
+        'map',
+        '◦\x20*Size*:\x20',
+        'oader/yout',
+        '131178uBCwze',
+        'getInfo',
+        'd\x20processi',
+        'ng...',
+        'sing\x20your\x20',
+        'Unknown',
+        'esults\x20fou',
+        'ults:',
+        'An\x20error\x20o',
+        'ccurred\x20wh',
+        '7628628IMeiSL',
+        '3309399wvZCYu',
+        'to\x20downloa',
+        'title',
+        'Provide\x20a\x20',
+        'chooseForm',
+        '8694411VQqJbo',
+        'length',
+        'nd.',
+        '@bochiltea',
+        'url',
+        'video',
+        'Starting\x20s',
+        'mp3',
+        'filter',
+        'type',
+        '12odYUjQ',
+        'audio/mpeg',
+        '35iQCPWD',
+        '4fDhntq'
+    ];
+    _0x413a = function () {
+        return _0x33a700;
+    };
+    return _0x413a();
+ }
 }
 break
 case "ytmp3": case "ytaudio":
