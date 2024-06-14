@@ -10,26 +10,26 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //contact details
-global.ownernomer = ['6285292206957','6285186666849']
-global.ownername = '💖𝙎𝙃𝙄𝙉𝘾𝙃𝘼𝙉 メ 𝙒𝙄𝘽𝙐𝙎𝙊𝙁𝙏💖'
+global.ownernomer = ['94752639652']
+global.ownername = 'ɪᴛᴢ ᴍᴇ ᴋʟᴡ : ɪꜱʜᴜ'
 global.ytname = " "
 global.socialm = " "
 global.location = "Indonesia, Jepang"
 
-global.ownernumber = ['6285292206957','6285186666849']  //creator number
-global.ownername = '💖𝙎𝙃𝙄𝙉𝘾𝙃𝘼𝙉 メ 𝙒𝙄𝘽𝙐𝙎𝙊𝙁𝙏💖' //owner name
-global.botname = '〔 ıll ⫹⫺ ©ɴᴇʀᴏʙᴏᴛ ²⁰²⁴/²⁰²⁵ 浤 llı 〕' //name of the bot
+global.ownernumber = ['94752639652']  //creator number
+global.ownername = 'ɪᴛᴢ ᴍᴇ ᴋʟᴡ : ɪꜱʜᴜ' //owner name
+global.botname = '🎓ᴘᴏᴡᴇʀᴇᴅ ᵇʸ͟⇝ꪏ͢🎭[දා.ර්.ශ.නි.ක]🎓🗣️' //name of the bot
 
 //sticker details
 global.packname = ''
-global.author = '\n\n\n\n\n\n\n\n\n\n〔 ıll ❬ 𝙎𝙃𝙄𝙉𝘾𝙃𝘼𝙉 メ 𝐒𝐄𝐍𝐏𝐀𝐈 仫 ❭ llı 〕\n 〔 ıll ⫹⫺ 𝙉𝙀𝙍𝙊メ𝐖𝐈𝐁𝐔𝐒𝐎𝐅𝐓 浤 llı 〕\n\n\n\n\n\n\n\n\n\n\n\n'
+global.author = '\n\n\n\n\n\n\n\n\n\nɪᴛᴢ ᴍᴇ ᴋʟᴡ : ɪꜱʜᴜ\n\n\n\n\n\n\n\n\n\n\n\n'
 
 //console view/theme
 global.themeemoji = '🪀'
-global.wm = "Nero Bot Inc."
+global.wm = "Ishu Bot Inc."
 
 //theme link
-global.link = 'https://whatsapp.com/channel/0029VaG9VfPKWEKk1rxTQD20'
+global.link = ''
 
 //custom prefix
 global.prefa = ['','!','.','#','&']
