@@ -17,8 +17,8 @@ global.socialm = " "
 global.location = "Indonesia, Jepang"
 
 global.ownernumber = ['94752639652']  //creator number
-global.ownername = 'ɪᴛᴢ ᴍᴇ ᴋʟᴡ : ɪꜱʜᴜ' //owner name
-global.botname = '🎓ᴘᴏᴡᴇʀᴇᴅ ᵇʸ͟⇝ꪏ͢🎭[දා.ර්.ශ.නි.ක]🎓🗣️' //name of the bot
+global.ownername = '🎓ᴘᴏᴡᴇʀᴇᴅ ᵇʸ͟⇝ꪏ͢🎭[දා.ර්.ශ.නි.ක]🎓🗣️' //owner name
+global.botname = 'ɪᴛᴢ ᴍᴇ ᴋʟᴡ : ɪꜱʜᴜ' //name of the bot
 
 //sticker details
 global.packname = ''
